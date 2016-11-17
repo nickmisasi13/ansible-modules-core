@@ -188,7 +188,7 @@ EXAMPLES = '''
     method: POST
     body: "name=your_username&password=your_password&enter=Sign%20in"
     status_code: 302
-    HEADER_Content-Type: "application/x-www-form-urlencoded"
+    headers: "{'Content-Type': 'application/json'}"
   register: login
 
 - uri:
